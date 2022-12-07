@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+ <head>
+	<title>HekMag | Shop</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="shop.css">
+ </head>
+ <body>
+     <div class="navigation">
+		 <div class="menuToggle"></div>
+		 <ul>
+			 <li class="list active">
+				 <a href="index.html">
+					 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+					 <span class="text">Home</span>
+				 </a>
+			 </li>
+			 <li class="list">
+				<a href="faq.html">
+					<span class="icon"><ion-icon name="help"></ion-icon></span>
+					<span class="text">FAQ</span>
+				</a>
+			</li>
+            <li class="list">
+                <a href="shop.html">
+                    <span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span>
+                    <span class="text">Shop</span>
+                </a>
+            </li>
+			<li class="list">
+				<a href="subscribe.html">
+					<span class="icon"><ion-icon name="book"></ion-icon></span>
+					<span class="text">Subscribe</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="form.html">
+					<span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+					<span class="text">Form</span>
+				</a>
+			</li>
+		 </ul>
+	 </div>
+	 <script>
+		 const menuToggle = document.querySelector('.menuToggle');
+		 const navigation = document.querySelector('.navigation');
+		
+		 menuToggle.onclick = function(){navigation.classList.toggle('open')}
+	 </script>
+	 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+     <div class="topheader">
+		<img src="images/logoShop.png">
+	</div>
+
+
+    <div class="popup">
+        <div class="contentBox">
+            <div class="close"></div>
+            <div class="imgBox">
+                <img src="images/amnesia.png">
+            </div>
+            <div class="content">
+                <div>
+                <h3>Support your local shop!</h3>
+                <p>All of the items listed here can be found at our local skateshop "Amnesia &#169;". The shop's team works hard to provide exclusive skate
+                    products ranging from any sorts of clothing to skate parts and tools. Apart from that they help the skate community grow and has turned
+                    many skateparks into a reality! Please do check them out!</p>
+                <a href="https://amnesiaskateshop.com/">Shop link</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const popup = document.querySelector('.popup');
+        const close = document.querySelector('.close')
+
+        window.onload = function(){
+            setTimeout(function(){popup.style.display = "block"},2000)}
+        
+        close.addEventListener('click', () => {popup.style.display="none"})
+    </script>
+
+     <div class="gallery">
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/93-denim-blue-black/"><h1>’93! Denim – Blue Black</h1>
+            <img src="images/3.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/f4-101-conical-full-54mm/"><h1>СF4 101 Conical Full 54mm</h1>
+            <img src="images/1.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/big-boy-shorts-light-blue/"><h1>Big Boy Shorts Light Blue</h1>
+            <img src="images/4.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/big-boy-shorts-washed-black/"><h1>Big Boy Shorts Washed Black</h1>
+            <img src="images/5.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/k9-8/"><h1>K9 – 8”</h1>
+            <img src="images/2.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/polar-skate-co-x-sun-buddies-lubna-sunglasses-black-smoke/"><h1>POLAR SKATE CO. X SUN BUDDIES<br> – Lubna Sunglasses – Black Smoke </h1>
+            <img src="images/6.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/ripstop-mini-hip-bag-purple/"><h1>Ripstop Mini Hip Bag – Purple</h1>
+            <img src="images/7.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/roman-gonzalez-soldier-8-125-8-375/"><h1>Roman Gonzalez- Soldier</h1>
+            <img src="images/8.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/dunk-low-pro-iso-dark-russet/"><h1>Dunk Low Pro ISO Dark Russet</h1>
+            <img src="images/9.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/default-crewneck-rich-red/"><h1>Polar Crewneck – Rich Red</h1>
+            <img src="images/10.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/heitor-pro-8-375/"><h1>Heitor Pro – 8.375”</h1>
+            <img src="images/11.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/nike-sb-dunk-high-pro-iso-kentucky/"><h1>Nike SB Dunk High Pro ISO Kentucky</h1>
+            <img src="images/12.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/polish-149mm-2/"><h1>Polish 149mm</h1>
+            <img src="images/13.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/hollow-lights-blue-148mm-2/"><h1>Hollow Lights Blue 148mm</h1>
+            <img src="images/14.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/vm001-leather-lo-black-white/"><h1>VM001 Leather Lo Black/White</h1>
+            <img src="images/15.png"></a>
+        </div>
+        <div class="galimg">
+            <a href="https://amnesiaskateshop.com/produkt/team-heaven-white-7-875-8-125-8-25-8-375-8-5/"><h1>Team Heaven – White</h1>
+            <img src="images/16.png"></a>
+        </div>
+        </div>
+ </body>
+</html>

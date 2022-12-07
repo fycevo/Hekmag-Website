@@ -1,0 +1,55 @@
+.intro
+{
+    margin-bottom: 5em;
+    font-weight: 800;
+    font-size: 1.25em;
+}
+.accordion
+{
+   max-width: 800px;
+   margin: auto;
+   padding: 5em 5em;
+   background: #c3d1df;
+   height: 100vh;
+   box-shadow: 5px 5px 5px rgb(151, 151, 151);
+}
+.accordion .contentBx
+{
+    position: relative;
+    margin-bottom: 10px;
+}
+.accordion .contentBx .label
+{
+    position: relative;
+    padding: 10px;
+    background: #5a90ce9f;
+    color: #fff;
+    cursor: pointer;
+}
+.accordion .contentBx .label::beforex
+{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordion .contentBx.active .label::before
+{
+    content: '-';
+}
+.accordion .contentBx .content
+{
+    position: relative;
+    background: #d3e8ff;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    overflow-y: auto;
+}
+.accordion .contentBx.active .content
+{
+    height: 150px;
+    padding: 10px;
+}

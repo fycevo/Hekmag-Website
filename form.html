@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+ <head>
+	<title>HekMag | Form</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+ </head>
+ <body>
+     <div class="navigation dark">
+		 <div class="menuToggle"></div>
+		 <ul>
+			 <li class="list active">
+				 <a href="index.html">
+					 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+					 <span class="text">Home</span>
+				 </a>
+			 </li>
+			 <li class="list">
+				<a href="faq.html">
+					<span class="icon"><ion-icon name="help"></ion-icon></span>
+					<span class="text">FAQ</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="shop.html">
+					<span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span>
+					<span class="text">Shop</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="subscribe.html">
+					<span class="icon"><ion-icon name="book"></ion-icon></span>
+					<span class="text">Subscribe</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="form.html">
+					<span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+					<span class="text">Form</span>
+				</a>
+			</li>
+		 </ul>
+	 </div>
+	 <script>
+		 const menuToggle = document.querySelector('.menuToggle');
+		 const navigation = document.querySelector('.navigation');
+		
+		 menuToggle.onclick = function(){navigation.classList.toggle('open')}
+	 </script>
+	 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <div class="topheader">
+		<img src="images/logoForm.png">
+	</div>
+	<div class="form">
+		<h2>Write us a message or give feedback</h2>
+		<div class="row100">
+			<div class="col">
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span class="text">First Name</span>
+					<span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row100">
+			<div class="col">
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span class="text">Last Name</span>
+					<span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row100">
+			<div class="col">
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span class="text">Email</span>
+					<span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row100">
+			<div class="col">
+				<div class="inputBox">
+					<input type="text" name="" required="required">
+					<span class="text">Mobile</span>
+					<span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row100">
+			<div class="col">
+				<div class="inputBox textarea">
+					<textarea required="required"></textarea>
+					<span class="text">Message...</span>
+					<span class="line"></span>
+				</div>
+			</div>
+		</div>
+		<div class="row100">
+			<div class="col">
+				<input type="submit" value="Send">
+			</div>
+		</div>
+	</div>
+	<div class="contacts">
+		<h2>Other ways to contact us</h2>
+		<p>E-mail:<br><a href="mailto:xxxxxx@gmail.com">xxxxxx@gmail.com</a><br><br>
+		Phone number:<br>08888888<br><br></p>
+		<p>Office:<br>San Stefano 18<br>1504 Sofia, Bulgaria</p>
+		<br><br><hr><br><br>
+		<h2>Sources</h2>
+		<p>
+			<br>
+			<a href="amnesiaskateshop.com/" target="_blank">Amnesia Skateshop</а>
+			<br>
+			<a href="beskatemag.com/" target="_blank">BEskateMag</а>
+			<br>
+			<a href="soloskatemag.com" target="_blank">SOLO Skatemag</a>
+			<br>
+			<a href="www.thrashermagazine.com" target="_blank">Thrasher</a>
+			<br><br>
+		</p>
+	</div>
+</body>
+</html>

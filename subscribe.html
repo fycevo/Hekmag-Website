@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+ <head>
+	<title>HekMag | Subscribe</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="subscribe.css">
+ </head>
+ <body>
+    <div class="navigation dark">
+        <div class="menuToggle"></div>
+        <ul>
+            <li class="list active">
+                <a href="index.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="list">
+               <a href="faq.html">
+                   <span class="icon"><ion-icon name="help"></ion-icon></span>
+                   <span class="text">FAQ</span>
+               </a>
+           </li>
+           <li class="list">
+               <a href="shop.html">
+                   <span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span>
+                   <span class="text">Shop</span>
+               </a>
+           </li>
+           <li class="list">
+               <a href="subscribe.html">
+                <span class="icon"><ion-icon name="book"></ion-icon></span>
+                <span class="text">Subscribe</span>
+               </a>
+           </li>
+           <li class="list">
+               <a href="form.html">
+                   <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                   <span class="text">Form</span>
+               </a>
+           </li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+       
+        menuToggle.onclick = function(){navigation.classList.toggle('open')}
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <div class="topheader">
+       <img src="images/sub.png">
+   </div>
+   <div class="bgsub">
+       <div class="desc"><h1>Ready for a new journey?</h1>
+        <h2>Choose a plan</h2></div>
+       <img src="images/bgsub.jpg">
+   </div>
+<div class="background">
+    <div class="container">
+      <div class="panel pricing-table">
+     
+        <div class="pricing-plan">
+          <img src="images/1plan.png" alt="" class="pricing-img">
+          <h2 class="pricing-header">New Relationship</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">2 Magazines</li>
+            <li class="pricing-features-item">2 Prints</li>
+          </ul>
+          <span class="pricing-price">$20/mo</span>
+          <a href="subscribebuy.html" class="pricing-button is-featured">Choose</a>
+        </div>
+        
+        <div class="pricing-plan">
+          <img src="images/2plan.png" alt="" class="pricing-img">
+          <h2 class="pricing-header">Full Supply</h2>
+          <ul class="pricing-features">
+            <li class="pricing-features-item">4 Magazines</li>
+            <li class="pricing-features-item">T-Shirt</li>
+            <li class="pricing-features-item">5 Prints</li>
+          </ul>
+          <span class="pricing-price">$60/mo</span>
+          <a href="subscribebuy.html" class="pricing-button">Choose</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ </body>
+</html>

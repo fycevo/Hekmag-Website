@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+ <head>
+	<title>HekMag | Home</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="faq.css">
+ </head>
+ <body>
+     <div class="navigation dark">
+		 <div class="menuToggle"></div>
+		 <ul>
+			 <li class="list active">
+				 <a href="index.html">
+					 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+					 <span class="text">Home</span>
+				 </a>
+			 </li>
+			 <li class="list">
+				<a href="#">
+					<span class="icon"><ion-icon name="help"></ion-icon></span>
+					<span class="text">FAQ</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="shop.html">
+					<span class="icon"><ion-icon name="pricetag-outline"></ion-icon></span>
+					<span class="text">Shop</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="subscribe.html">
+					<span class="icon"><ion-icon name="book"></ion-icon></span>
+					<span class="text">Subscribe</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="form.html">
+					<span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+					<span class="text">Form</span>
+				</a>
+			</li>
+		 </ul>
+	 </div>
+	 <script>
+		 const menuToggle = document.querySelector('.menuToggle');
+		 const navigation = document.querySelector('.navigation');
+		
+		 menuToggle.onclick = function(){navigation.classList.toggle('open')}
+	 </script>
+	 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<div class="topheader">
+		<img src="images/logoFAQ.png">
+	</div>
+    <div class="accordion">
+        <p class="intro">We get sent a lot of messages on a daily basis and we have the top 4 most frequently asked questions answered here. 
+            We hope this information helps in any way. And if not.. Buy a mag for you and a friend. :)</p>
+        <div class="contentBx">
+            <div class="label">What does this magazine include?</div>
+            <div class="content">
+                <p>
+                    HekMag has many interviews, pictures, quizes and news to offer to its amazing readers!
+                    We believe just by quickly going through the pages could get you motivated to skate or create art.
+                </p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Do we ship worldwide?</div>
+            <div class="content">
+                <p>
+                    We do indeed ship worldwide however for the time being we are currently having difficulty with shipping to the US and our team is working
+                    hard to eliminate any issues.
+                </p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Where Can I Skate?</div>
+            <div class="content">
+                <p>
+                    Anywhere they don't bust you, and sometimes even there. Most skating at the moment takes place in areas not intended for skating. 
+                    People skate anywhere and everywhere throughout our cities. Over the years different types of purpose built skate facilities have 
+                    been developed, but few have matched the challenge of the every-day surroundings of our urban lives.
+                </p>
+            </div>
+        </div>
+        <div class="contentBx">
+            <div class="label">Is there a way to participate in the HekMag weekly best trick competition?</div>
+            <div class="content">
+                <p>
+                    Absolutely! All you have to do is post a trick on any social media platform e.g Instagram, TikTok, Twitter and make sure you include #hekmagweekly in the caption 
+                    so we can review your post! Winner get a $100 and a free issue.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+
+        for (i=0; i<accordion.length; i++){
+            accordion[i].addEventListener('click',function()
+            {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+ </body>
+</html>
